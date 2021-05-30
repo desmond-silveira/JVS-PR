@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Movie List</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>Movie List</h1>
+    <div style="width: 655px">
+      <div style="height: 350px; width: 300px; padding: 10px; border: 1px solid black; float: left;">
+        <h2>Filter</h2>
+        <table>
+          <tr><th>Title:</th><td><input name="filterTitle"/></td></tr>
+          <tr><th>Year:</th><td><input name="filterMinYear" maxlength="4" size="6"/>&nbsp;
+              - &nbsp;<input name="filterMaxYear" maxlength="4" size="6"/></td></tr>
+          <tr><th>Director:</th><td><input name="filterDirector"/></td></tr>
+          <tr><th>Stars:</th><td><input name="filterActor"/></td></tr>
+          <tr><th>Genres:</th><td><select name="filterGenres" multiple></select></td></tr>
+          <tr><th>Ratings:</th><td><select name="filterRatings" multiple></select></td></tr>
+        </table>
+        <button name="filter">Filter</button>
+      </div>
+      <div style="height: 350px; width: 300px; padding: 10px; border: 1px solid black; float: right;">
+        <h2>Add</h2>
+        <table>
+          <tr><th>Title:</th><td><input name="addTitle"/></td></tr>
+          <tr><th>Year:</th><td><input name="addYear"/></td></tr>
+          <tr><th>Director:</th><td><input name="addDirector"/></td></tr>
+          <tr><th>Stars:</th><td><input name="addActors"/></td></tr>
+          <tr><th>Genres:</th><td><select name="addGenres" multiple></select></td></tr>
+          <tr><th>Rating:</th><td><select name="addRating"></select></td></tr>
+        </table>
+        <button name="add">Add</button>
+      </div>
+    </div>
+    <div style="padding: 10px; clear: both;">
+      <ul></ul>
+    </div>
+    <article style="height: 100px; width: 633px; padding: 10px; border: 1px solid black; float: left;">
+    </article>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script type="text/javascript" src="movie-data.js"></script>
+    <script type="text/javascript" src="movie.js"></script>
+  </body>
+</html>
